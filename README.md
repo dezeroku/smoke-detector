@@ -15,6 +15,20 @@ The rendered png file is available as `schematic.png` and visible below.
 
 # Logic
 
+```mermaid
+flowchart TD
+    A[Start] --> B{Is smoke detected?}
+    B -->|Yes| C[Buzz + blink]
+    B -->|No| B
+    C --> D{Was button pressed?}
+    D -->|Yes| E[Quiet down]
+    D -->|No| F[Have 5 seconds passed since detection?]
+    F -->|Yes| E
+    F -->|No| C
+    E --> G[Sleep 5 minutes]
+    G --> B
+```
+
 # End notes
 
 This project makes use of:

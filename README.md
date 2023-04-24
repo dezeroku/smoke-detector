@@ -1,6 +1,6 @@
 # Smoke detector
 
-Simple smoke detector that will beep in a pattern until a button is pressed (which will snooze it for 5 minutes).
+Simple smoke detector that will beep in a pattern until a button is pressed (which will snooze it for 5 minutes) or timeout occurs.
 
 The main usage idea is to detect cigarette smoke and alert the user to close the window manually when it happens.
 
@@ -44,7 +44,6 @@ This requires the Arduino to be present as `/dev/ttyACM0`
 
 This project makes use of:
 
-- [RPI-Pico-Eagle-lib](https://github.com/Lobo-T/RPI-Pico-Eagle-lib) project for Eagle schematics of RPI Pico
 - [Adafruit-Eagle-Library](https://github.com/adafruit/Adafruit-Eagle-Library) for Arduino Uno R3
 - [Eagle-Libraries](https://github.com/chiengineer/Eagle-Libraries) project for the buzzer schematic
 - [Eagle-Libraries](https://github.com/chiengineer/Eagle-Libraries) project for the tactile switch schematic

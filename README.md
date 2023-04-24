@@ -29,6 +29,15 @@ flowchart TD
     G --> B
 ```
 
+# Building
+
+It uses the Arduino flavoured C++ under the hood and needs [arduino-cli](https://github.com/arduino/arduino-cli) to work.
+
+Rust caused problems during compilation and I don't have time to fix these :/
+
+Run `make` to build and `make install` to flash the binary to a device.
+This requires the Arduino to be present as `/dev/ttyACM0`
+
 # End notes
 
 This project makes use of:

@@ -12,8 +12,6 @@
 #define BREAK_TIME 1000
 
 
-uint8_t loopIterator = 0;
-
 void setup() {
     pinMode(PIN_LED, OUTPUT);
     pinMode(PIN_BUZZER, OUTPUT);
@@ -79,13 +77,5 @@ void loop() {
         delay(SLEEP_TIME);
     }
 
-    if (loopIterator == 0) {
-        digitalWrite(PIN_LED, HIGH);
-        delay(200);
-        digitalWrite(PIN_LED, LOW);
-    }
-
-    delay(50);
-
-    loopIterator += 1;
+    delay(500);
 }

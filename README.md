@@ -11,6 +11,8 @@ It uses `Arduino Uno R3` as the logic board.
 Electronics schematic can be viewed using `Autodesk Eagle` (open the `schematic.sch` file).
 
 The rendered png file is available as `schematic.png` and visible below.
+
+MQ2 smoke/gas detector with digital output adaptation is used as a sensor.
 ![Schematic](schematic.png?raw=true "Schematic")
 
 # Logic

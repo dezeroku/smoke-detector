@@ -1,1 +1,3 @@
 *~
+# Eagle temp files
+*.s#[0-9]*
